@@ -1,4 +1,4 @@
-package flight_6;
+package flight_6.User;
 
 import java.util.Objects;
 
@@ -7,10 +7,14 @@ public class Users {
     private String name;
     private int passportNumber;
 
+    // Constructor - all fields
     public Users(int ID, String name, int passportNumber) {
-
+        this.ID = ID;
+        this.name = name;
+        this.passportNumber = passportNumber;
     }
 
+    // Constructor - default
     public Users() {
     }
 
