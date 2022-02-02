@@ -1,8 +1,21 @@
 package flight_6.Flights;
 
+import flight_6.User.Users;
+
 public class FlightsServices {
 
+public void addUsers(Users user, Flights flight){
+    for (int i = 0; i < flight.getUser().length; i++) {
+        if (flight.getUser()[i] == null){
+            flight.getUser()[i] = user;
+            break;
 
+        } else {
+            throw new IllegalStateException(flight.getUser() + "sorry this flight is full");
+
+        }
+    }
+}
 
 }
 

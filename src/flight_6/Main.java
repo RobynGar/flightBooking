@@ -12,6 +12,8 @@ public class Main {
 
         Airport airport1 = new Airport("airport1", 5);
         Flights Norway = new Flights("Norway", 1400, 4);
+        Flights Spain = new Flights("Spain", 1100, 10);
+        Flights USA = new Flights("USA", 1900, 8);
         Users abdi = new Users("Abdi", 284202985);
         Users aaron = new Users("Aaron", 265782684);
         Users robyn = new Users("Robyn", 542372964);
@@ -23,6 +25,7 @@ public class Main {
         System.out.println("1: book a flight");
         System.out.println("2: airport management");
         int service = pScanner.nextInt();
+        pScanner.nextLine();
         if (service == 1) {
             //service 1 will prompt them to create users (give name and passport number)
             // show list of flights in airport 1
@@ -36,6 +39,10 @@ public class Main {
             int passportNumInput = pScanner.nextInt();
             Users user1 = new Users(nameInput, passportNumInput);
         }
+//Could anyone hear me?
 
+        // i can hear uuu
+
+        // It asked for camera permission, but not mic...
     }
 }
