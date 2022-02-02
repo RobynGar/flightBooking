@@ -1,6 +1,7 @@
 package flight_6.User;
 
 import java.util.Objects;
+import java.util.Random;
 
 public class Users {
     private int ID;
@@ -8,8 +9,8 @@ public class Users {
     private int passportNumber;
 
     // Constructor - all fields
-    public Users(int ID, String name, int passportNumber) {
-        this.ID = ID;
+    public Users(String name, int passportNumber) {
+        this.ID = UsersServices.createIds();    // This instance of ID will always be equal to our createID count
         this.name = name;
         this.passportNumber = passportNumber;
     }
