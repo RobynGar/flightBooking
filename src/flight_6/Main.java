@@ -6,11 +6,13 @@ import flight_6.User.Users;
 import flight_6.User.UsersServices;
 
 import java.util.Scanner;
+import java.util.Arrays;
+
 
 public class Main {
     public static void main(String[] args) {
 
-        Airport airport1 = new Airport("airport1", 5);
+        Airport airport1 = new Airport("airport1", 3);
         Flights Norway = new Flights("Norway", 1400, 4);
         Flights Spain = new Flights("Spain", 1100, 10);
         Flights USA = new Flights("USA", 1900, 8);
@@ -38,11 +40,8 @@ public class Main {
             System.out.println("Please enter your 9 digit passport number: ");
             int passportNumInput = pScanner.nextInt();
             Users user1 = new Users(nameInput, passportNumInput);
+            System.out.println(Arrays.toString(airport1.getFlight()));
         }
-//Could anyone hear me?
 
-        // i can hear uuu
-
-        // It asked for camera permission, but not mic...
     }
 }
