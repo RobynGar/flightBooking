@@ -23,7 +23,6 @@ public class Main {
 
         Scanner pScanner = new Scanner(System.in);
         System.out.println("Welcome to the flight booking system.");
-        //System.out.println("What service you you like?");
         System.out.println("Would you like to book a flight");
         System.out.println("Yes/No");
 
