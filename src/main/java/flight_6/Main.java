@@ -23,12 +23,13 @@ public class Main {
 
         Scanner pScanner = new Scanner(System.in);
         System.out.println("Welcome to the flight booking system.");
-        System.out.println("What service you you like?");
-        System.out.println("1: book a flight");
-        System.out.println("2: airport management");
-        int service = pScanner.nextInt();
-        pScanner.nextLine();
-        if (service == 1) {
+        //System.out.println("What service you you like?");
+        System.out.println("Would you like to book a flight");
+        System.out.println("Yes/No");
+
+        String service = pScanner.nextLine().toLowerCase(Locale.ROOT);
+        //pScanner.nextLine();
+        if (service.equals("yes")) {
             //service 1 will prompt them to create users (give name and passport number)
             // show list of flights in airport 1
             // pick a flight
@@ -40,7 +41,14 @@ public class Main {
             System.out.println("Please enter your 9 digit passport number: ");
             int passportNumInput = pScanner.nextInt();
             Users user1 = new Users(nameInput, passportNumInput);
+            System.out.println("User created: " + user1);
+            System.out.println("Which flight would you like to book?");
+
             System.out.println(Arrays.toString(airport1.getFlight()));
+        } else if (service.equals("no")) {
+
+        } else {
+            System.out.println(" is not an accepted answer, please type yes or no.");
         }
 
     }
